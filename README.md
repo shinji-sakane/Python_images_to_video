@@ -34,7 +34,7 @@ Python_images_to_video/
     ...
 ```
 
-- All input images must be stored in the images/ directory.
+- All input images must be stored in the ```images/``` directory.
 - Filenames should be sortable in time order (e.g., zero-padded numbering).
 
 ## Usage

@@ -50,7 +50,7 @@ def images2video(image_files, video_fps, outputfile):
     writer.release()
     print("Saved video to: " + outputfile)
 
-if __name__ == "__main__":
+def main():
 
     # Frames per second of the output video.
     video_fps = 2
@@ -63,3 +63,6 @@ if __name__ == "__main__":
 
     images2video(image_files, video_fps, outputfile)
 
+if __name__ == "__main__":
+
+    main()

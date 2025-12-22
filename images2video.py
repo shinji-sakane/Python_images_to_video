@@ -1,27 +1,12 @@
+import os
 import glob
 import cv2
 
-def main():
-
-    # Frames per second of the output video.
-    video_fps = 2
-    
-    # Directory containing input images (frames).
-    inputfile_path = "./images"
-    
-    # File extension of input images to include.
-    inputfile_exp  = ".png"
-    
-    # Output directory and base filename (without extension).
-    outputfile_path = "./"
-    outputfile_name = "anyname"
-
-    # Collect image files and sort them in ascending (lexicographic) order.
-    image_files = sorted(glob.glob(inputfile_path + "/*" + inputfile_exp))
+def images2video(image_files, video_fps, outputfile):
 
     # If no matching images are found, abort with a error message.
     if not image_files:
-        print("No image files (" + inputfile_exp + ") were found in the directory " + inputfile_path)
+        print("No image files were found in the inputfile directory")
         return
     
     # Read the first image to determine the required frame size for the video.
@@ -29,10 +14,11 @@ def main():
 
     # Select a codec. 'mp4v' is commonly used for MP4 output.
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-
-    # Construct the output filename (MP4).
-    outputfile = outputfile_path + outputfile_name + ".mp4"
-
+    outputfile_ext = os.path.splitext(outputfile)[1]
+    if outputfile_ext != ".mp4":
+        print("The output file extension must be '.mp4'.")
+        return
+    
     # Create the VideoWriter object.
     writer = cv2.VideoWriter(outputfile, fourcc, video_fps, (image_W0, image_H0))
     if not writer.isOpened():
@@ -65,4 +51,15 @@ def main():
     print("Saved video to: " + outputfile)
 
 if __name__ == "__main__":
-    main()
+
+    # Frames per second of the output video.
+    video_fps = 2
+    
+    # Collect image files and sort them in ascending (lexicographic) order.
+    image_files = sorted(glob.glob("./images/*.png"))
+    
+    # Construct the output filename (MP4).
+    outputfile = "./anyname.mp4"
+
+    images2video(image_files, video_fps, outputfile)
+

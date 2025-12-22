@@ -28,9 +28,9 @@ Example:
 Python_images_to_video/
   images2video.py
   images/
-    images_0001.png
-    images_0002.png
-    images_0003.png
+    images_001.png
+    images_002.png
+    images_003.png
     ...
 ```
 
@@ -47,6 +47,7 @@ By default:
 
 - Input directory: ./images
 - Image format: .png
+- Output directory: ./
 - Output file: anyname.mp4
 - Frame rate: 2 fps
 
@@ -54,10 +55,8 @@ These parameters can be modified directly in the script:
 
 ```bash
 video_fps = 2
-inputfile_path = "./images"
-inputfile_exp  = ".png"
-outputfile_path = "./"
-outputfile_name = "anyname"
+image_files = sorted(glob.glob("./images/*.png"))
+outputfile = "./anyname.mp4"
 ```
 
 ## Notes and Limitations
@@ -75,9 +74,9 @@ If automatic resizing is required, the script must be modified accordingly.
 Images are sorted lexicographically using glob and sorted().
 To ensure correct time ordering, use filenames such as:
 ```bash
-images_0001.png
-images_0002.png
-images_0003.png
+images_001.png
+images_002.png
+images_003.png
 ...
 ```
 

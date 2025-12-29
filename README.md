@@ -5,42 +5,6 @@ Convert a time-ordered image sequence into a video using Python and OpenCV.
 This repository provides a simple Python script that converts a sequence of images stored in a directory into a video file (MP4 format) using OpenCV.
 The images are assumed to represent a time series and must all have the same resolution.
 
-<table>
-  <tr>
-  </tr>
-  <tr>
-    <td><img src="./images/images_000.png" width="100"></td>
-    <td><img src="./images/images_001.png" width="100"></td>
-    <td><img src="./images/images_002.png" width="100"></td>
-    <td><img src="./images/images_003.png" width="100"></td>
-    <td><img src="./images/images_004.png" width="100"></td>
-  </tr>
-  <tr>
-    <td><img src="./images/images_005.png" width="100"></td>
-    <td><img src="./images/images_006.png" width="100"></td>
-    <td><img src="./images/images_007.png" width="100"></td>
-    <td><img src="./images/images_008.png" width="100"></td>
-    <td><img src="./images/images_009.png" width="100"></td>
-  </tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  <tr>
-  
-  </tr>
-</table>
-
-&dArr;
-
-
-https://github.com/user-attachments/assets/03583c5d-67fb-427f-9155-7d2e90616824
-
-
-
-<!-- <video src="./anyname.mp4" controls="true" width="100"></video> -->
-
 ## Requirements
 - Python 3.x
 - OpenCV (cv2)

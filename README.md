@@ -34,7 +34,7 @@ The images are assumed to represent a time series and must all have the same res
 
 &dArr;
 
-<video src="./anyname.mp4" controls="true" width="100"></video>
+https://github.com/user-attachments/assets/213a5ebc-ba30-4c80-8158-09c5f74026a0
 
 ## Requirements
 - Python 3.x

@@ -9,18 +9,18 @@ The images are assumed to represent a time series and must all have the same res
   <tr>
   </tr>
   <tr>
-    <td><img src="./images_000.png" width="100"></td>
-    <td><img src="./images_001.png" width="100"></td>
-    <td><img src="./images_002.png" width="100"></td>
-    <td><img src="./images_003.png" width="100"></td>
-    <td><img src="./images_004.png" width="100"></td>
+    <td><img src="./images/images_000.png" width="100"></td>
+    <td><img src="./images/images_001.png" width="100"></td>
+    <td><img src="./images/images_002.png" width="100"></td>
+    <td><img src="./images/images_003.png" width="100"></td>
+    <td><img src="./images/images_004.png" width="100"></td>
   </tr>
   <tr>
-    <td><img src="./images_005.png" width="100"></td>
-    <td><img src="./images_006.png" width="100"></td>
-    <td><img src="./images_007.png" width="100"></td>
-    <td><img src="./images_008.png" width="100"></td>
-    <td><img src="./images_009.png" width="100"></td>
+    <td><img src="./images/images_005.png" width="100"></td>
+    <td><img src="./images/images_006.png" width="100"></td>
+    <td><img src="./images/images_007.png" width="100"></td>
+    <td><img src="./images/images_008.png" width="100"></td>
+    <td><img src="./images/images_009.png" width="100"></td>
   </tr>
     <td></td>
     <td></td>
@@ -35,6 +35,7 @@ The images are assumed to represent a time series and must all have the same res
 &dArr;
 
 https://github.com/user-attachments/assets/213a5ebc-ba30-4c80-8158-09c5f74026a0
+<!-- <video src="./anyname.mp4" controls="true" width="100"></video> -->
 
 ## Requirements
 - Python 3.x

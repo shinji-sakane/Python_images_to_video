@@ -5,6 +5,37 @@ Convert a time-ordered image sequence into a video using Python and OpenCV.
 This repository provides a simple Python script that converts a sequence of images stored in a directory into a video file (MP4 format) using OpenCV.
 The images are assumed to represent a time series and must all have the same resolution.
 
+<table>
+  <tr>
+  </tr>
+  <tr>
+    <td><img src="./images_000.png" width="100"></td>
+    <td><img src="./images_001.png" width="100"></td>
+    <td><img src="./images_002.png" width="100"></td>
+    <td><img src="./images_003.png" width="100"></td>
+    <td><img src="./images_004.png" width="100"></td>
+  </tr>
+  <tr>
+    <td><img src="./images_005.png" width="100"></td>
+    <td><img src="./images_006.png" width="100"></td>
+    <td><img src="./images_007.png" width="100"></td>
+    <td><img src="./images_008.png" width="100"></td>
+    <td><img src="./images_009.png" width="100"></td>
+  </tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  <tr>
+  
+  </tr>
+</table>
+
+&dArr;
+
+<video src="./anyname.mp4" controls="true" width="100"></video>
+
 ## Requirements
 - Python 3.x
 - OpenCV (cv2)
@@ -45,11 +76,11 @@ python images2video.py
 
 By default:
 
-- Input directory: ./images
-- Image format: .png
-- Output directory: ./
-- Output file: anyname.mp4
-- Frame rate: 2 fps
+- Input directory: ```./images```
+- Image format: ```.png```
+- Output directory: ```./```
+- Output file: ```anyname.mp4```
+- Frame rate: ```2 fps```
 
 These parameters can be modified directly in the script:
 
